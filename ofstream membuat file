@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+
+int main() {
+  // Membuat objek ofstream dan membuka file
+  std::ofstream file("data.txt");
+
+  // Menulis ke dalam file
+  file << "Ini adalah baris pertama" << std::endl;
+  file << "Ini adalah baris kedua" << std::endl;
+
+  // Menutup file
+  file.close();
+
+  return 0;
+}
